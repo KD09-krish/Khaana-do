@@ -15,8 +15,17 @@ public class AuthenticationController {
 	}
 	
 	
-	@GetMapping("/")
+	@GetMapping("/auth")
+	public String homePage() {
+		return "login";
+	}
+	
+	@RequestMapping("/api/auth")
 	public String welcome() {
+	     return "test";
+	}
+	
+	public String h() {
 		return "index";
 	}
 	

@@ -20,16 +20,11 @@ public class KhanaDoApplication implements CommandLineRunner{
 	public static void main(String[] args) {
 		SpringApplication.run(KhanaDoApplication.class, args);
 	}
-
-	@Autowired
-	ReviewDAO dao;
 	
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		Review review = new Review(4.5, "sample review",new User(), new Date());
-	//	review = dao.save(review);
-		System.out.println(review);
+	
 		
 	}
 

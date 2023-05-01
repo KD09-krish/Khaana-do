@@ -53,9 +53,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link active">Menu</a>
                     </div>
-                    <a href="" class="btn btn-primary py-2 px-4">Menu</a>
+                    <a href="/auth" class="btn btn-primary py-2 px-4">Login</a>
                 </div>
             </nav>
 

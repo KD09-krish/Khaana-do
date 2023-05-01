@@ -19,10 +19,8 @@ public class SecurityConfig{
 	    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 	        
 	      //  http.oauth2Login().authorizationEndpoint();
-	        http.authorizeRequests().anyRequest().authenticated().and().oauth2Login();
-	        
-	        
-	            
+	        http.authorizeRequests().requestMatchers("/api/auth").authenticated().and().oauth2Login();
+	      
 	        return http.build();
 	    }
 }
